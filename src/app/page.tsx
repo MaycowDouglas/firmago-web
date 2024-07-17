@@ -1,10 +1,7 @@
-import { env } from '@/config/env'
 import React from 'react'
 
-type Props = {}
+import { env } from '@/config/env'
 
-export default function HomePage({}: Props) {
-  return (
-    <div>{env.NEXT_PUBLIC_API_URL}</div>
-  )
+export default function HomePage() {
+  return <div>{env.NEXT_PUBLIC_API_URL}</div>
 }
